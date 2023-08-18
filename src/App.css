@@ -1,0 +1,377 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #072333;
+  font-family: din-2014,sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://use.typekit.net/yjs2lsy.css");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('/public/slots6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+.fullSlot {
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80%;
+  height: calc(100% - 60px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  align-items: center;
+}
+
+/* .casinoName {
+  font-family: fino-sans,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.781);
+  width: 100%;
+  padding: 10px 0 0 0;
+} */
+
+.myLogo {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.myLogo img {
+  width: 100px;  /* You can adjust this according to your logo size */
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.myLogo a {
+  font-family: hydrophilia-iced,sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.myLogo .buy-token {
+  background-color: #ffd900;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* If you want to style your navbar links on hover */
+.myLogo a:hover {
+  color: #ff4500; /* Adjust as desired */
+}
+
+.logotext {
+  font-family: hydrophilia-iced,sans-serif;
+  flex: 1; /* This gives equal width to both .logotext elements */
+  text-align: center; /* Centers the text within its flexbox */
+  font-size: 5em;
+  padding: 0 60px 0 60px;
+  color: white;
+  opacity: 0.6;
+}
+
+.price {
+  font-family: hydrophilia-iced,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: rgb(10, 22, 39);
+  padding: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
+  text-align: center;
+  border: solid 2px #ffd900;
+  width: 97%;
+  height: 50px;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.price3 {
+  font-family: hydrophilia-iced,sans-serif;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.price1 {
+  font-family: hydrophilia-iced,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  cursor: crosshair;
+  background-color: rgb(10, 22, 39);
+  text-align: center;
+  width: 30%;
+  height: 50px;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1.2em;
+  border-radius: 30px;
+}
+
+.jackpot {
+  font-family: hydrophilia-iced,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: rgb(10, 22, 39);
+  padding: 5px 0 0 0;
+  margin: 30px 0 20px 0;
+  text-align: center;
+  border: dotted 5px #ffd900;
+  width: 40%;
+  height: 50px;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.priceInd {
+  margin: 0;
+  animation: premio .5s forwards linear;
+}
+
+.renewButton {
+  margin: 20px 0 0 0;
+  padding: 20px;
+  line-height: 0;
+}
+
+@keyframes premio {
+  0% {transform: translateY(100px);}
+  80% {transform: translateY(-5px);}
+  100% {transform: translateY(0);}
+}
+
+.slot {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slotFoot {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.slotFoot1 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.betInput {
+  font-family: hydrophilia-iced,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background-size: 20px;
+  font-size: 1.2em;
+  margin: 20px;
+  height: 50px;
+  width: 100%;
+  flex: 1 1 auto;
+  text-align: center;
+  color: white;
+  background-color: rgb(10, 22, 39);
+  border: solid 2px;
+}
+
+.spinButton {
+  cursor: pointer;
+  font-family: hydrophilia-iced,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0 0 0 5px;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 80px;
+  background-color: #ffd900;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.spinButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.buyMoreButton {
+  cursor: pointer;
+  font-family: hydrophilia-iced,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1em;
+  width: calc(100% - 20px);
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #ffd900;
+  border: none;
+  border-radius: 2px;; 
+}
+
+.row {
+  flex: 1 0 auto;
+  margin: 0 5px 0 5px;
+  overflow: hidden;
+  border: solid 2px #ffd9009c;
+  background: linear-gradient(0deg,  rgb(204, 203, 203)  0%, rgb(255, 255, 255)20%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 80%, rgb(204, 203, 203) 100%);
+}
+
+.ringMoving {
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 4em;
+  animation: goaround 0.2s linear infinite;
+}
+
+.content-box {
+  width: 90%; /* Adjust as necessary */
+  margin: 40px auto; /* Center the box */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* Slight white background, adjust as needed */
+  border-radius: 8px;
+  font-size: 1em; 
+  color: white;
+  height: 80%;
+  font-family: hydrophilia-iced,sans-serif;
+}
+
+.content-box h1 {
+  color: #ffd900;
+  text-align: center;
+}
+
+.second {
+  padding: 0 50px 0 30px;
+}
+
+
+.ringEnd {
+  height: 125px;
+  line-height: 125px;
+  text-align: center;
+  font-size: 4em;
+  animation: stop .5s ease-out forwards;
+}
+
+.slots-container {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80%;
+  height: calc(100% - 60px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  align-items: center;
+}
+
+.chart-container {
+  margin-top: 20px;
+  padding: 0 50px 0 30px;
+}
+
+.bar-chart {
+  display: flex;
+  height: 30px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.bar {
+  height: 100%;
+}
+
+.marketing {
+  background-color: #ff8800;
+}
+
+.liquidity {
+  background-color: #00aaff;
+}
+
+.jackpot1 {
+  background-color: #00cc44;
+}
+
+.legend {
+  display: flex;
+  font-size: 18px;
+  color: white;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.legend-color {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+@keyframes goaround {
+0% {transform: translateY(0);}
+100% {transform: translateY(-1000px);}
+}
+
+@keyframes stop {
+  0% {transform: translateY(0)}
+  50% {transform: translateY(-90px)}
+  75% {transform: translateY(-80px)}
+  100% {transform: translateY(-85px)}
+  }
